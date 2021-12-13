@@ -1,0 +1,31 @@
+﻿{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:32989",
+      "sslPort": 44349
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true, //Para não exibir o swagger no navegador comentar essa linha
+      "launchUrl": "swagger", //Para não exibir o swagger no navegador comentar essa linha
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "UsuariosAPI": {
+      "commandName": "Project",
+      "dotnetRunMessages": "true",
+      "launchBrowser": true, //Para não exibir o swagger no navegador comentar essa linha
+      "launchUrl": "swagger", //Para não exibir o swagger no navegador comentar essa linha
+      "applicationUrl": "https://localhost:6001;http://localhost:6000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "98db3fbe-e5b1-4ecf-a4c2-0736e24b37bd",
+		"name": "Alura - NET5_e_Identity_Implementando_controle_de_usuario",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "UsuarioAPI",
+			"item": [
+				{
+					"name": "Cadastrar Usuário",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"UserName\" : \"flaviocarvalho\",\r\n    \"Email\" : \"flavio.megre@gmail.com\",\r\n    \"Password\" : \"Senha123!\",\r\n    \"Repassword\" : \"Senha123!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/Cadastro",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"Cadastro"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ativar Conta de Usuário",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/Ativar?UserId=14&ActivationCode=CfDJ8NaqYJ36IlVDh3Ai31tVZfmHRTxmRHJmEDlslfR+yBSbwRwqZukGozUDUUEkI6k/jm1PJOXbYbUyX63oHKw36rlCNdRIX9xwL5wRBYSUe1hmxdPXiVUq73OaNbBWsQ7RC06Af/RU4vhrfmcrqszDFU3SC/fd3OB6SO3YVN2Du3N2+LIreWr0+kcMn2F1oUOcuw==",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"Ativar"
+							],
+							"query": [
+								{
+									"key": "UserId",
+									"value": "14"
+								},
+								{
+									"key": "ActivationCode",
+									"value": "CfDJ8NaqYJ36IlVDh3Ai31tVZfmHRTxmRHJmEDlslfR+yBSbwRwqZukGozUDUUEkI6k/jm1PJOXbYbUyX63oHKw36rlCNdRIX9xwL5wRBYSUe1hmxdPXiVUq73OaNbBWsQ7RC06Af/RU4vhrfmcrqszDFU3SC/fd3OB6SO3YVN2Du3N2+LIreWr0+kcMn2F1oUOcuw=="
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Realizar Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"UserName\" : \"flaviocarvalho\",\r\n    \"Password\" : \"Senha123!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:6000/Login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"Login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Realizar Logout",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:6000/Logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "6000",
+							"path": [
+								"Logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
