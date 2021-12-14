@@ -45,9 +45,10 @@ namespace FilmesAPI.Services
 
             if (!filmes.Any())
             {
-                readFilmeDtos = _mapper.Map<List<ReadFilmeDto>>(filmes);
+                return readFilmeDtos;    
             }
-
+                
+            readFilmeDtos = _mapper.Map<List<ReadFilmeDto>>(filmes);
             return readFilmeDtos;
         }
 
